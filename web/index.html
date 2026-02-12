@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remo | Enterprise Control Panel</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">REMO</div>
+            <nav>
+                <a href="#" class="nav-item active"><i class="fa-solid fa-desktop"></i> Devices</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-shield-halved"></i> Security</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-gear"></i> Settings</a>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <header>
+                <h1>System Overview</h1>
+                <div class="user-profile">
+                    <span id="server-status" class="status-badge status-online">Relay Online</span>
+                </div>
+            </header>
+
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="text-dim">Active Clients</div>
+                    <div class="stat-value" id="active-count">0</div>
+                    <div class="text-dim"><i class="fa-solid fa-arrow-up text-green"></i> System Live</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-dim">Data Throughput</div>
+                    <div class="stat-value">2.4 MB/s</div>
+                    <div class="text-dim">Live Stream</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-dim">Avg Latency</div>
+                    <div class="stat-value">14ms</div>
+                    <div class="text-dim">Global Relay</div>
+                </div>
+            </section>
+
+            <section class="client-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Computer Name</th>
+                            <th>Location</th>
+                            <th>Status</th>
+                            <th>OS Version</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="client-table-body">
+                        <!-- Dynamic content will be injected here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modals for SSH and RDP -->
+    <div id="ssh-modal" class="modal">
+        <div class="modal-content terminal-window">
+            <div class="terminal-header">
+                <span>Terminal - <span id="terminal-target">None</span></span>
+                <button class="close-btn" onclick="closeSSH()">&times;</button>
+            </div>
+            <div id="terminal-output" class="terminal-body"></div>
+            <div class="terminal-input-row">
+                <span>></span>
+                <input type="text" id="terminal-input" placeholder="Enter command..."
+                    onkeydown="handleTerminalKey(event)">
+            </div>
+        </div>
+    </div>
+
+    <div id="rdp-modal" class="modal">
+        <div class="modal-content rdp-window">
+            <div class="modal-header">
+                <span>Remote Desktop - <span id="rdp-target">None</span></span>
+                <button class="close-btn" onclick="closeRDP()">&times;</button>
+            </div>
+            <div class="rdp-body">
+                <img id="rdp-canvas" src="" alt="Remote screen">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

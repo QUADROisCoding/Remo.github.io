@@ -1,0 +1,17 @@
+﻿  Wiederherzustellende Projekte werden ermittelt...
+C:\Users\benab\Documents\Projects\Remo\client\Client.csproj : warning NU1603: Client h├ñngt von SocketIO.Serializer.NewtonsoftJson (>= 3.0.7) ab, aber SocketIO.Serializer.NewtonsoftJson 3.0.7 wurde nicht gefunden. SocketIO.Serializer.NewtonsoftJson 3.1.0 wurde stattdessen aufgel├Âst.
+  Alle Projekte sind f├╝r die Wiederherstellung auf dem neuesten Stand.
+C:\Users\benab\Documents\Projects\Remo\client\Client.csproj : warning NU1603: Client h├ñngt von SocketIO.Serializer.NewtonsoftJson (>= 3.0.7) ab, aber SocketIO.Serializer.NewtonsoftJson 3.0.7 wurde nicht gefunden. SocketIO.Serializer.NewtonsoftJson 3.1.0 wurde stattdessen aufgel├Âst.
+C:\Users\benab\Documents\Projects\Remo\client\Program.cs(12,22): error CS0234: Der Typ- oder Namespacename "Newtonsoft" ist im Namespace "SocketIOClient" nicht vorhanden. (M├Âglicherweise fehlt ein Assemblyverweis.) [C:\Users\benab\Documents\Projects\Remo\client\Client.csproj]
+C:\Users\benab\Documents\Projects\Remo\client\Program.cs(18,24): error CS0118: "SocketIO" ist "Namespace", wird aber wie "Typ" verwendet. [C:\Users\benab\Documents\Projects\Remo\client\Client.csproj]
+
+Fehler beim Buildvorgang.
+
+C:\Users\benab\Documents\Projects\Remo\client\Client.csproj : warning NU1603: Client h├ñngt von SocketIO.Serializer.NewtonsoftJson (>= 3.0.7) ab, aber SocketIO.Serializer.NewtonsoftJson 3.0.7 wurde nicht gefunden. SocketIO.Serializer.NewtonsoftJson 3.1.0 wurde stattdessen aufgel├Âst.
+C:\Users\benab\Documents\Projects\Remo\client\Client.csproj : warning NU1603: Client h├ñngt von SocketIO.Serializer.NewtonsoftJson (>= 3.0.7) ab, aber SocketIO.Serializer.NewtonsoftJson 3.0.7 wurde nicht gefunden. SocketIO.Serializer.NewtonsoftJson 3.1.0 wurde stattdessen aufgel├Âst.
+C:\Users\benab\Documents\Projects\Remo\client\Program.cs(12,22): error CS0234: Der Typ- oder Namespacename "Newtonsoft" ist im Namespace "SocketIOClient" nicht vorhanden. (M├Âglicherweise fehlt ein Assemblyverweis.) [C:\Users\benab\Documents\Projects\Remo\client\Client.csproj]
+C:\Users\benab\Documents\Projects\Remo\client\Program.cs(18,24): error CS0118: "SocketIO" ist "Namespace", wird aber wie "Typ" verwendet. [C:\Users\benab\Documents\Projects\Remo\client\Client.csproj]
+    2 Warnung(en)
+    2 Fehler
+
+Verstrichene Zeit 00:00:02.27
